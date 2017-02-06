@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		6549ED4A1E49063900343ACA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549ED491E49063900343ACA /* AppDelegate.swift */; };
-		6549ED4C1E49063900343ACA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549ED4B1E49063900343ACA /* ViewController.swift */; };
+		6549ED4C1E49063900343ACA /* PickRoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549ED4B1E49063900343ACA /* PickRoshamboViewController.swift */; };
 		6549ED4F1E49063900343ACA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6549ED4D1E49063900343ACA /* Main.storyboard */; };
 		6549ED511E49063900343ACA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6549ED501E49063900343ACA /* Assets.xcassets */; };
 		6549ED541E49063900343ACA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6549ED521E49063900343ACA /* LaunchScreen.storyboard */; };
+		6549ED5C1E4906CC00343ACA /* ResultsOfRoshamboViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549ED5B1E4906CC00343ACA /* ResultsOfRoshamboViewController.swift */; };
+		6549ED5E1E490CD500343ACA /* RoshamboModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6549ED5D1E490CD500343ACA /* RoshamboModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		6549ED461E49063900343ACA /* Roshambo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Roshambo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6549ED491E49063900343ACA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		6549ED4B1E49063900343ACA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		6549ED4B1E49063900343ACA /* PickRoshamboViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickRoshamboViewController.swift; sourceTree = "<group>"; };
 		6549ED4E1E49063900343ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		6549ED501E49063900343ACA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		6549ED531E49063900343ACA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		6549ED551E49063900343ACA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6549ED5B1E4906CC00343ACA /* ResultsOfRoshamboViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultsOfRoshamboViewController.swift; sourceTree = "<group>"; };
+		6549ED5D1E490CD500343ACA /* RoshamboModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoshamboModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,13 +59,31 @@
 			isa = PBXGroup;
 			children = (
 				6549ED491E49063900343ACA /* AppDelegate.swift */,
-				6549ED4B1E49063900343ACA /* ViewController.swift */,
-				6549ED4D1E49063900343ACA /* Main.storyboard */,
+				6549ED5F1E49135200343ACA /* Views & Controllers */,
+				6549ED601E49136800343ACA /* Model */,
 				6549ED501E49063900343ACA /* Assets.xcassets */,
 				6549ED521E49063900343ACA /* LaunchScreen.storyboard */,
 				6549ED551E49063900343ACA /* Info.plist */,
 			);
 			path = Roshambo;
+			sourceTree = "<group>";
+		};
+		6549ED5F1E49135200343ACA /* Views & Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				6549ED4B1E49063900343ACA /* PickRoshamboViewController.swift */,
+				6549ED5B1E4906CC00343ACA /* ResultsOfRoshamboViewController.swift */,
+				6549ED4D1E49063900343ACA /* Main.storyboard */,
+			);
+			name = "Views & Controllers";
+			sourceTree = "<group>";
+		};
+		6549ED601E49136800343ACA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				6549ED5D1E490CD500343ACA /* RoshamboModel.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +159,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6549ED4C1E49063900343ACA /* ViewController.swift in Sources */,
+				6549ED4C1E49063900343ACA /* PickRoshamboViewController.swift in Sources */,
 				6549ED4A1E49063900343ACA /* AppDelegate.swift in Sources */,
+				6549ED5E1E490CD500343ACA /* RoshamboModel.swift in Sources */,
+				6549ED5C1E4906CC00343ACA /* ResultsOfRoshamboViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
