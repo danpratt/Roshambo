@@ -17,6 +17,8 @@ class ResultsOfRoshamboViewController: UIViewController {
     var model: RoshamboModel?
     override func viewDidLoad() {
         super.viewDidLoad()
+        // Fix image size
+        resultImage.contentMode = .scaleAspectFit
         // Figure out who won
         let didPlayerWin = model?.getWinner()
         // call function to update display to show results

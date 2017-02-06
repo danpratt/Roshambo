@@ -10,12 +10,18 @@ import UIKit
 
 class PickRoshamboViewController: UIViewController {
     
+    @IBOutlet var buttonsWithImages: [UIButton]!
+    
+    
     private var model: RoshamboModel?
     private var playerChoice: RoshamboModel.RoshamboType?
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        // Aspect Fit the buttons
+        for button in buttonsWithImages {
+            button.imageView?.contentMode = .scaleAspectFit
+        }
     }
     
     private func createRoshamboModel () {

@@ -31,7 +31,7 @@ class RoshamboModel {
         case rock = "Rock Smashes Scissors"
         case paper = "Paper Covers Rock"
         case scissors = "Scissors Cuts Paper"
-        case tie = "They are the Same"
+        case tie = "You Each Picked the Same Thing"
     }
     
     private func randomComputerChoice() -> RoshamboType {
