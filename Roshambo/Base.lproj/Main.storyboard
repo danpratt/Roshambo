@@ -94,9 +94,21 @@
                                     <action selector="playAgainButtonPressed:" destination="ggP-US-PZJ" eventType="touchUpInside" id="gsT-oa-I73"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Reason For Result" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ay3-wY-EDK">
+                                <rect key="frame" x="118" y="349" width="138" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="reasonForResultLabel" destination="ay3-wY-EDK" id="0jF-Vy-9wp"/>
+                        <outlet property="resultImage" destination="ySN-qx-V4U" id="JnN-8L-Ms3"/>
+                        <outlet property="resultLabel" destination="9o8-tk-hlW" id="rrW-Ys-FeN"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Wc7-pU-fOU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

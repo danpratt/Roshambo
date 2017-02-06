@@ -16,12 +16,22 @@ class RoshamboModel {
         return checkIfPlayerWon()
     }
     
+    // Holds Enum to figure out what to show on the view.
+    var resultsMessage: ResultsMessages!
+    
     enum RoshamboType: Int {
         case rock = 0, paper, scissors
     }
     
     enum PlayerWon: Int {
         case won = 0, lost, tie
+    }
+    
+    enum ResultsMessages: String {
+        case rock = "Rock Smashes Scissors"
+        case paper = "Paper Covers Rock"
+        case scissors = "Scissors Cuts Paper"
+        case tie = "They are the Same"
     }
     
     private func randomComputerChoice() -> RoshamboType {
@@ -39,19 +49,22 @@ class RoshamboModel {
         print("Player has: \(playerChoice)")
         print ("Computer has: \(computerChoice!)")
         if playerChoice == computerChoice {
-            print("Tied")
+            resultsMessage = .tie
             return .tie
         }
         
         switch playerChoice {
         case .rock:
             print("Checking rock case")
+            resultsMessage = ResultsMessages.rock
             return computerChoice == .scissors ? .won : .lost
         case .paper:
             print("Checking paper case")
+            resultsMessage = ResultsMessages.paper
             return computerChoice == .rock ? .won : .lost
         case .scissors:
             print("Checking scissors case")
+            resultsMessage = ResultsMessages.scissors
             return computerChoice == .paper ? .won : .lost
         }
         
